@@ -21,15 +21,15 @@ The dashboard supports data-driven business growth decisions through automated v
 ## 🗂️ Dashboard Structure
 Page 1: Sales Growth Overview
 
-![Sales Growth Dashboard]()
+![Sales Growth Dashboard](SalesGrowthDashboard.png)
 
 >This page focuses on overall business performance metrics:
 
 - 🪙 Total Revenue — $10.03M overall company sales.
 
-- 📈 YTD Revenue & Profit Trends — Monthly growth visualization for the current year.
+#  📈 YTD Revenue & Profit Trends — Monthly growth visualization for the current year.
 
-- 🧾 KPIs Summary:
+ # KPIs Summary:
 
 - YTD Revenue: $1.8M -62.1% YoY
 
@@ -39,7 +39,7 @@ Page 1: Sales Growth Overview
 
 - YTD Gross Margin: 7.8%, +8.9% YoY
 
-- 🏷️ Product-Level Analysis
+-  Product-Level Analysis
 
 - “Vintage Cars” and “Classic Cars” dominate overall revenue.
 
@@ -49,6 +49,8 @@ Page 1: Sales Growth Overview
 
 # Regional & Yearly Breakdown
 >This page highlights regional and country-wise sales distribution:
+
+![Dashboard Page2](SalesGrowthDashboard1B.png)
 
 # 🌍 YTD Revenue by Country:
 
@@ -60,7 +62,7 @@ Page 1: Sales Growth Overview
 
 - 2004 shows a peak at $4.7M, followed by declines in 2005 (−62%).
 
-# 🗺️ Country-wise Revenue Map:
+#  Country-wise Revenue Map:
 
 Interactive map visualization showcasing revenue distribution by continent and country, aiding quick geographic comparisons.
 
@@ -68,8 +70,18 @@ Interactive map visualization showcasing revenue distribution by continent and c
 
 - USA, Spain, and France drive majority of global sales, contributing nearly 70% of total YTD revenue.
 
-- Profit margins have improved YoY despite a 62% revenue decline, indicating cost reduction success.
+- Profit margins have improved YoY despite a -62% revenue decline, indicating cost reduction success.
 
 - Seasonality: Q4 months (Oct–Dec) consistently outperform other months.
 
 - Geographical imbalance: Certain countries show underutilized potential, suggesting a need for targeted sales campaigns.
+
+# Tools & Technologies
+
+Power BI Desktop — Dashboard design, DAX calculations, and report building.
+
+Power Query — Data cleaning and transformation.
+
+DAX (Data Analysis Expressions) — KPI creation and time intelligence.
+
+CSV Data Source — Raw transactional dataset.
