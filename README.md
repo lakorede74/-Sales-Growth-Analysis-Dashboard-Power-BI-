@@ -31,13 +31,13 @@ Page 1: Sales Growth Overview
 
  # KPIs Summary:
 
-- YTD Revenue: $1.8M -62.1% YoY
+- YTD Revenue: $1.8M  and -62.1% YoY
 
-- YTD Profit: $139.2K -58.7% YoY
+- YTD Profit: $139.2K and  -58.7% YoY
 
-- YTD Orders: 59 -59% YoY
+- YTD Orders: 59 and -59% YoY
 
-- YTD Gross Margin: 7.8%, +8.9% YoY
+- YTD Gross Margin: 7.8% and +8.9% YoY
 
 -  Product-Level Analysis
 
