@@ -21,7 +21,7 @@ The dashboard supports data-driven business growth decisions through automated v
 ## 🗂️ Dashboard Structure
 Page 1: Sales Growth Overview
 
-![Sales Growth Dashboard](SalesGrowthDashboard.png)
+![Sales Growth Dashboard](SALESGROWTH3A.png)
 
 >This page focuses on overall business performance metrics:
 
@@ -50,7 +50,7 @@ Page 1: Sales Growth Overview
 # Regional & Yearly Breakdown
 >This page highlights regional and country-wise sales distribution:
 
-![Dashboard Page2](SalesGrowthDashboard1B.png)
+![Dashboard Page2](SALESGROWTH3B.png)
 
 # 🌍 YTD Revenue by Country:
 
