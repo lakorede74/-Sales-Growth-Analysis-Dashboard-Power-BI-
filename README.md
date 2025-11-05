@@ -6,6 +6,24 @@ This project presents a two-page Power BI dashboard for Sales Growth Analysis, d
 It evaluates year-to-date (YTD) sales, profit, and order performance while offering a geographical breakdown across multiple countries.
 The dashboard supports data-driven business growth decisions through automated visuals, DAX-powered KPIs, and comparative insights.
 
+>This Power BI dashboard analyzes company sales performance based on shipped orders only, providing a clear picture of realized revenue and profitability across products, time, and countries.
+It excludes pending, canceled, or returned orders to ensure accurate business insights from completed transactions.
+
+
+# Data Source and Modelling
+
+Data source: ('https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/data')
+File name: Sample Sales Data
+
+# 🧩 Data Modelling
+
+The dataset contains 25 columns in a single flat table. To enhance performance and analytical efficiency, the data was modelled into a star schema with clearly defined fact and dimension tables.
+
+Since the original dataset did not include a cost price column, I created a calculated column to estimate cost.
+For this analysis, the hypothetical cost price was assumed to be 7% lower than the Manufacturer’s Suggested Retail Price (MSRP), providing a realistic basis for profit margin calculations.
+
+![]()
+
 
 # 🎯 Objectives
 
