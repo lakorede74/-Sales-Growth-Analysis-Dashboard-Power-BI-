@@ -1,5 +1,5 @@
 # 🚀Sales-Growth-Analysis-Dashboard-Power-BI
-## 📘 Overview
+# Overview
 
 This project presents a two-page Power BI dashboard for Sales Growth Analysis, designed to provide executives with a dynamic view of company performance, profitability, and market trends.
 
@@ -12,17 +12,20 @@ It excludes pending, canceled, or returned orders to ensure accurate business in
 
 # Data Source and Modelling
 
-Data source: ('https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/data')
-File name: Sample Sales Data
+Data source: 'https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/data'
 
-# 🧩 Data Modelling
+File name: Sales_data_sample.csv
+
+#  Data Modelling
 
 The dataset contains 25 columns in a single flat table. To enhance performance and analytical efficiency, the data was modelled into a star schema with clearly defined fact and dimension tables.
 
 Since the original dataset did not include a cost price column, I created a calculated column to estimate cost.
 For this analysis, the hypothetical cost price was assumed to be 7% lower than the Manufacturer’s Suggested Retail Price (MSRP), providing a realistic basis for profit margin calculations.
 
-![]()
+Entity Relationship Diagram
+
+![](SalesGrowthSchemas1.png)
 
 
 # 🎯 Objectives
@@ -99,7 +102,7 @@ Interactive map visualization showcasing revenue distribution by continent and c
 
 Power BI Desktop — Dashboard design, DAX calculations, and report building.
 
-Power Query — Data cleaning and transformation.
+Power Query — Data cleaning, transformation and modelling
 
 DAX (Data Analysis Expressions) — KPI creation and time intelligence.
 
