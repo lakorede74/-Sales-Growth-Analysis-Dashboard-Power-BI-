@@ -1,4 +1,4 @@
-# 🚀Sales-Growth-Analysis-Dashboard-Power-BI
+## 🚀Sales-Growth-Analysis-Dashboard-Power-BI
 # Overview
 
 This project presents a two-page Power BI dashboard for Sales Growth Analysis, designed to provide executives with a dynamic view of company performance, profitability, and market trends.
@@ -10,9 +10,11 @@ The dashboard supports data-driven business growth decisions through automated v
 It excludes pending, canceled, or returned orders to ensure accurate business insights from completed transactions.
 
 
-# Data Source and Modelling
+# Dataset
 
-Data source: 'https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/data'
+Data source: https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/data
+
+Description: The Dataset is a synthetic data crated by Gus Segura
 
 File name: Sales_data_sample.csv
 
@@ -40,7 +42,7 @@ Entity Relationship Diagram
 
 - Deliver interactive filtering and real-time data visualization.
 
-## 🗂️ Dashboard Structure
+# 🗂️ Dashboard Structure
 Page 1: Sales Growth Overview
 
 ![Sales Growth Dashboard](SALESGROWTH3A.png)
