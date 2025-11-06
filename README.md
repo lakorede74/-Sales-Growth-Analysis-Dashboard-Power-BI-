@@ -112,4 +112,4 @@ CSV Data Source — Raw transactional dataset.
 
 
 
-![VIEW DAX MEASURE](https://github.com/lakorede74/-Sales-Growth-Analysis-Dashboard-Power-BI-/blob/7d60864ea6ca8f8c31fb04339a4e059babcdfcb1/%F0%9F%93%98%20SALES%20GROWTH%20ANALYSIS%20DASHBOARD%20MEASURES.txt)
+[VIEW DAX MEASURE](https://github.com/lakorede74/-Sales-Growth-Analysis-Dashboard-Power-BI-/blob/7d60864ea6ca8f8c31fb04339a4e059babcdfcb1/%F0%9F%93%98%20SALES%20GROWTH%20ANALYSIS%20DASHBOARD%20MEASURES.txt)
