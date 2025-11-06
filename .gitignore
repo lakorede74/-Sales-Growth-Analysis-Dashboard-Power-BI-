@@ -1,3 +1,5 @@
 *.pbix
 .pbi/
 *.auto.pbip
+.csv
+.txt
