@@ -1,0 +1,114 @@
+SALES GROWTH ANALYSIS DASHBOARD — DAX MEASURES
+Author: Lukman Akorede
+This file contains all major DAX measures used in the 
+Power BI Sales Growth Analysis Dashboard.
+
+1 REVENUE & PROFIT METRICS
+Total Revenue =
+    Total Revenue = CALCULATE(SUM('Fact_sales'[REVENUE]), FILTER(Fact_sales, Fact_sales[STATUS] = "shipped"))
+
+TOTAL PROFIT = CALCULATE(SUM(Fact_sales[PROFIT]), FILTER(Fact_sales, Fact_sales[STATUS] = "shipped"))
+
+COGS = SUM(Fact_sales[TOTAL COST])
+
+TOTAL ORDERS = CALCULATE(DISTINCTCOUNT(Fact_sales[ORDERNUMBER]), FILTER(Fact_sales, Fact_sales[STATUS] = "shipped"))
+
+
+Profit Margin  =
+    DIVIDE([Total Profit], [Total Revenue], 0)
+
+
+
+
+
+2 TIME INTELLIGENCE — YTD / PY CALCULATIONS
+
+YTD Revenue =
+    TOTALYTD(
+        [Total Revenue],
+        Calendar[Date]
+    )
+
+YTD Profit =
+    TOTALYTD(
+        [Total Profit],
+        Calendar[Date]
+    )
+
+PY Revenue =
+    CALCULATE(
+        [YTD Revenue],
+        SAMEPERIODLASTYEAR(Calendar[Date])
+    )
+
+PY Profit =
+    CALCULATE(
+        [YTD Profit],
+        SAMEPERIODLASTYEAR(Calendar[Date])
+    )
+
+3 GROWTH METRICS
+
+Revenue Growth =
+    DIVIDE(
+        [YTD Revenue] - [PY Revenue],
+        [PY Revenue],
+        0
+    )
+
+YoY Profit =
+    DIVIDE(
+        [YTD Profit] - [PY Profit],
+        [PY Profit],
+        0
+    )
+
+4 ORDER & CUSTOMER METRICS
+YTD ORDER = TOTALYTD([TOTAL ORDERS],'Calendar'[Date])
+
+YTD ORDER = TOTALYTD([TOTAL ORDERS],'Calendar'[Date])
+
+PY Orders =
+    CALCULATE(
+        [YTD Orders],
+        SAMEPERIODLASTYEAR(Calendar[Date])
+    )
+
+YoY ORDER  =
+    DIVIDE(
+        [YTD Orders] - [PY Orders],
+        [PY Orders],
+        0
+    )
+
+
+
+
+5 CONDITIONAL FORMATTING / KPI ICONS
+Revenue  Icon =
+    VAR Positive_icon = UNICHAR(9650)
+                VAR Negative_icon = UNICHAR(9660)
+                VAR Result = IF([YoY Revenue]>0, Positive_icon, Negative_icon)
+                RETURN Result
+
+Profit Icon = 
+                VAR Positive_icon = UNICHAR(9650)
+                VAR Negative_icon = UNICHAR(9660)
+                VAR Result = IF([YoY PROFIT]>0, Positive_icon, Negative_icon)
+                RETURN Result
+
+
+Order Icon =
+VAR Positive_icon = UNICHAR(9650)
+                VAR Negative_icon = UNICHAR(9660)
+                VAR Result = IF([YoY ORDER]>0, Positive_icon, Negative_icon)
+                RETURN Result 
+
+Order Color = IF([YoY ORDER]>0, "#00FF00" , "#FF0000")
+
+Profit Color = IF([YoY PROFIT]>0, "#00FF00" , "#FF0000")
+
+Revenue Color = IF([YoY REVENUE]>0, "#00FF00" , "#FF0000")
+
+
+
