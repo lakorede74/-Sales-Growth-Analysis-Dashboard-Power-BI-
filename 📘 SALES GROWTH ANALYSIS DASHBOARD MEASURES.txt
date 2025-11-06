@@ -1,4 +1,4 @@
-SALES GROWTH ANALYSIS DASHBOARD — DAX MEASURES
+SALES GROWTH ANALYSIS DASHBOARD â€” DAX MEASURES
 Author: Lukman Akorede
 This file contains all major DAX measures used in the 
 Power BI Sales Growth Analysis Dashboard.
@@ -21,7 +21,7 @@ Profit Margin  =
 
 
 
-2 TIME INTELLIGENCE — YTD / PY CALCULATIONS
+2 TIME INTELLIGENCE â€” YTD / PY CALCULATIONS
 
 YTD Revenue =
     TOTALYTD(
@@ -87,22 +87,22 @@ YoY ORDER  =
 5 CONDITIONAL FORMATTING / KPI ICONS
 Revenue  Icon =
     VAR Positive_icon = UNICHAR(9650)
-                VAR Negative_icon = UNICHAR(9660)
-                VAR Result = IF([YoY Revenue]>0, Positive_icon, Negative_icon)
-                RETURN Result
+Â  Â  Â  Â  Â  Â  Â  Â  VAR Negative_icon = UNICHAR(9660)
+Â  Â  Â  Â  Â  Â  Â  Â  VAR Result = IF([YoY Revenue]>0, Positive_icon, Negative_icon)
+Â  Â  Â  Â  Â  Â  Â  Â  RETURN Result
 
 Profit Icon = 
-                VAR Positive_icon = UNICHAR(9650)
-                VAR Negative_icon = UNICHAR(9660)
-                VAR Result = IF([YoY PROFIT]>0, Positive_icon, Negative_icon)
-                RETURN Result
+Â  Â  Â  Â  Â  Â  Â  Â  VAR Positive_icon = UNICHAR(9650)
+Â  Â  Â  Â  Â  Â  Â  Â  VAR Negative_icon = UNICHAR(9660)
+Â  Â  Â  Â  Â  Â  Â  Â  VAR Result = IF([YoY PROFIT]>0, Positive_icon, Negative_icon)
+Â  Â  Â  Â  Â  Â  Â  Â  RETURN Result
 
 
 Order Icon =
 VAR Positive_icon = UNICHAR(9650)
-                VAR Negative_icon = UNICHAR(9660)
-                VAR Result = IF([YoY ORDER]>0, Positive_icon, Negative_icon)
-                RETURN Result 
+Â  Â  Â  Â  Â  Â  Â  Â  VAR Negative_icon = UNICHAR(9660)
+Â  Â  Â  Â  Â  Â  Â  Â  VAR Result = IF([YoY ORDER]>0, Positive_icon, Negative_icon)
+Â  Â  Â  Â  Â  Â  Â  Â  RETURN Result 
 
 Order Color = IF([YoY ORDER]>0, "#00FF00" , "#FF0000")
 
