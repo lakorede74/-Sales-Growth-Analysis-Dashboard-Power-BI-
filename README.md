@@ -14,7 +14,7 @@ It excludes pending, canceled, or returned orders to ensure accurate business in
 
 Data source: https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/data
 
-Description: The Dataset is a synthetic data crated by Gus Segura
+Description: The Dataset is a synthetic data created by Gus Segura
 
 File name: Sales_data_sample.csv
 
